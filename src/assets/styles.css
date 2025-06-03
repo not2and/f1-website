@@ -75,43 +75,60 @@ h1, h2, h3 {
     background-color: #A60E24; /* Darker shade of red */
 }
 
-.teams-grid {
+/* Estilo sofisticado para grid de pilotos */
+.drivers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 24px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin: 32px 0 48px 0;
+    justify-items: center;
 }
 
-.team-card {
-    background: #181818;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    padding: 18px 16px;
+.driver-card {
+    background: linear-gradient(135deg, #232526 0%, #414345 100%);
     color: #fff;
-    border-left: 5px solid #e10600;
-    transition: transform 0.2s;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.18), 0 1.5px 4px rgba(200,16,46,0.12);
+    padding: 28px 22px;
+    border-left: 6px solid #e10600;
+    font-size: 1.08em;
+    min-width: 220px;
+    max-width: 340px;
+    transition: transform 0.18s, box-shadow 0.18s;
+    position: relative;
+    overflow: hidden;
 }
 
-.team-card:hover {
-    transform: translateY(-4px) scale(1.03);
-    box-shadow: 0 4px 16px rgba(225,6,0,0.15);
+.driver-card::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 100px;
+    height: 100px;
+    background: rgba(225,6,0,0.08);
+    border-radius: 50%;
+    z-index: 0;
 }
 
-.team-card h4 {
-    margin-top: 0;
-    margin-bottom: 8px;
-    font-size: 1.15em;
+.driver-card strong {
     color: #e10600;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
 }
 
-.team-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.driver-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(225,6,0,0.18), 0 2px 8px rgba(0,0,0,0.12);
 }
 
-.team-card li {
-    margin-bottom: 4px;
-    font-size: 1em;
+@media (max-width: 600px) {
+    .drivers-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .driver-card {
+        max-width: 98vw;
+        padding: 18px 8px;
+    }
 }
