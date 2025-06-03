@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: #C8102E; /* Formula 1 Red */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: #C8102E; /* Formula 1 Red */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #A60E24; /* Darker shade of red */
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.team-card {
+    background: #181818;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 18px 16px;
+    color: #fff;
+    border-left: 5px solid #e10600;
+    transition: transform 0.2s;
+}
+
+.team-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(225,6,0,0.15);
+}
+
+.team-card h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.15em;
+    color: #e10600;
+}
+
+.team-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-card li {
+    margin-bottom: 4px;
+    font-size: 1em;
+}

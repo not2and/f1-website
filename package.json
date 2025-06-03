@@ -1,0 +1,22 @@
+{
+  "name": "f1-website",
+  "version": "1.0.0",
+  "description": "A polished website dedicated to Formula 1, featuring teams, drivers, history, and news.",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "start": "live-server src",
+    "build": "echo 'Build process not defined yet.'"
+  },
+  "keywords": [
+    "Formula 1",
+    "F1",
+    "racing",
+    "sports",
+    "website"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
